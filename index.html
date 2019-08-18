@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Celestial Sign</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="scripts/script.js" charset="utf-8" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Celestial Signs</h1>
+        <p>There are 12 astrological signs, also known as signs of the Zodiac - in order, they are - Aries, Taurus, Gemini, Cancer, Leo, Virgo, Libra, Scorpio, Sagittarius, Capricorn, Aquarius and Pisces.<br />
+            Some people believe that different signs of the Zodiac reveal a person's different characteristics and talents.<br />
+            To determine which star sign you are, you need to find the Zodiac that falls on your birthday.
+        </p>
+        <div class="container">
+            <label for="month">Month</label>
+            <select id="birthYear" name="birthYear" onchange="getDate()">
+                <option selected disabled>Year</option>
+            </select>
+            <br />
+            <label for="month">Month</label>
+            <select id="birthMonth" name="birthMonth" onclick="getDate()">
+                <option selected disabled>Month</option>
+            </select>
+            <br />
+            <label for="day">Day</label>
+            <select id="birthDay" name="birthDay">
+                <option selected disabled>Day</option>
+            </select>
+            <button class="submit" type="submit" name="Submit" onclick="getCelestialSign()">
+                Submit
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
